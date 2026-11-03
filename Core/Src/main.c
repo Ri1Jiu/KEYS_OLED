@@ -103,10 +103,17 @@ int main(void)
     {
       OLED_NewFrame();
 
-		  OLED_DrawCircle(64 ,32, i, OLED_COLOR_NORMAL);
-       OLED_DrawCircle(64 ,32, i* 1.6, OLED_COLOR_NORMAL);
-       OLED_DrawCircle(64 ,32, i* 2.4, OLED_COLOR_NORMAL);
-      OLED_ShowFrame();
+		  // OLED_DrawCircle(64 ,32, i, OLED_COLOR_NORMAL);
+      //  OLED_DrawCircle(64 ,32, i* 1.6, OLED_COLOR_NORMAL);
+      //  OLED_DrawCircle(64 ,32, i* 2.4, OLED_COLOR_NORMAL);
+
+
+      // OLED_DrawImage(43, 0 ,&bilibiliImg, OLED_COLOR_NORMAL);
+      // OLED_DrawImage(25, 0 ,&rocketImg, OLED_COLOR_NORMAL);
+
+
+      OLED_PrintString(64-2*i, 40, "Hello World!", &font16x16, OLED_COLOR_NORMAL);
+      OLED_ShowFrame(); 
     }
 
 		
